@@ -166,9 +166,9 @@ addSnat(){
         rmIptablesNat $localport
 
         ## 建立新的中转规则
-        iptables -t nat -A PREROUTING -p tcp --dport $localport -j DNAT --to-destination $remotehost:$remoteport
+#        iptables -t nat -A PREROUTING -p tcp --dport $localport -j DNAT --to-destination $remotehost:$remoteport
         iptables -t nat -A PREROUTING -p udp --dport $localport -j DNAT --to-destination $remotehost:$remoteport
-        iptables -t nat -A POSTROUTING -p tcp -d $remotehost --dport $remoteport -j SNAT --to-source $localIP
+#        iptables -t nat -A POSTROUTING -p tcp -d $remotehost --dport $remoteport -j SNAT --to-source $localIP
         iptables -t nat -A POSTROUTING -p udp -d $remotehost --dport $remoteport -j SNAT --to-source $localIP
     else
         echo 请输入一个IP
