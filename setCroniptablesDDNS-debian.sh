@@ -20,7 +20,7 @@ echo "正在安装依赖...."
 apt install -y wget dnsutils &> /dev/null
 cd /usr/local
 rm -f /usr/local/iptables4ddns.sh
-wget https://raw.githubusercontent.com/arloor/iptablesUtils/master/iptables4ddns.sh  &> /dev/null
+wget https://raw.githubusercontent.com/zander-wzx/iptablesUtils/master/iptables4ddns.sh  &> /dev/null
 chmod +x /usr/local/iptables4ddns.sh
 echo "Done!"
 echo ""
