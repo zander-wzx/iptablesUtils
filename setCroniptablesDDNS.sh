@@ -1,6 +1,6 @@
 #! /bin/bash
 
-wget https://raw.githubusercontent.com/zander-wzx/iptablesUtils/master/setCroniptablesDDNS.sh;bash setCroniptablesDDNS.sh
+#wget https://raw.githubusercontent.com/zander-wzx/iptablesUtils/master/setCroniptablesDDNS.sh;bash setCroniptablesDDNS.sh
 
 red="\033[31m"
 black="\033[0m"
