@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# wget https://raw.githubusercontent.com/arloor/iptablesUtils/master/setCroniptablesDDNS.sh;bash setCroniptablesDDNS.sh
+wget https://raw.githubusercontent.com/zander-wzx/iptablesUtils/master/setCroniptablesDDNS.sh;bash setCroniptablesDDNS.sh
 
 red="\033[31m"
 black="\033[0m"
@@ -20,7 +20,7 @@ echo "正在安装依赖...."
 yum install -y wget bind-utils &> /dev/null
 cd /usr/local
 rm -f /usr/local/iptables4ddns.sh
-wget https://raw.githubusercontent.com/arloor/iptablesUtils/master/iptables4ddns.sh  &> /dev/null
+wget https://raw.githubusercontent.com/zander-wzx/iptablesUtils/master/iptables4ddns.sh  &> /dev/null
 chmod +x /usr/local/iptables4ddns.sh
 echo "Done!"
 echo ""
